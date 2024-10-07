@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="coinswitch.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
+    <style>
+
+        /* General styles */
+        body {
+            font-family: New Amsterdam, sans-serif;
+            
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between; /* Space between elements */
+            align-items: center; /* Align items vertically centered */
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .navlinks {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            align-items: center; /* Ensure links are vertically centered */
+        }
+
+        .navlinks li {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .navlinks li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            padding: 10px;
+            display: flex;
+            align-items: center; /* Ensure text and icon are aligned */
+        }
+
+        .navlinks li a box-icon {
+            margin-left: 5px;
+            font-size: 14px;
+            vertical-align: middle;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px 0;
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #000;
+            color:aliceblue;
+            border-radius: 7px;
+        }
+
+        /* Show dropdown on hover */
+        .navlinks li:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Button styles */
+        .login-btn {
+            background-color: #00ba008c;
+            border: none;
+            
+            padding: 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+
+        .login-btn:hover {
+            background-color: rgb(186, 219, 130);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .afacad-flux {
+            font-family: "Afacad Flux", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="coinswitch.png" alt="Logo"> 
+        </div>
+
+        <ul class="navlinks">
+            <li class="nav-item">
+                <a href="#">Products<box-icon name='chevron-down'></box-icon></a>
+                <div class="dropdown-content">
+
+                    <a href="#">CoinSwitch PRO</a>
+                    <a href="#">Crypto Futures Trading</a>
+                    <a href="#">HNIs & Institutional Investors</a>
+                    <a href="#">Systematic Investment Plan</a>
+                    <a href="#">SmartInvest</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="#">Coins</a></li>
+            <li class="nav-item"><a href="#">Ventures</a></li>
+            <li class="nav-item"><a href="#">Blog</a></li>
+            <li class="nav-item">
+                <a href="#">Company<box-icon name='chevron-down'></box-icon></a>
+                <div class="dropdown-content">
+                    <a href="#">About Us</a>
+                    <a href="#">Carrers</a>
+                    <a href="#">Press</a>
+                </div>
+            </li>
+        </ul>
+        <button class="login-btn">Login To Pro</button>
+    </nav>
+
+</body>
+</html>
